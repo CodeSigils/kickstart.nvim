@@ -31,24 +31,43 @@ For platform specific installations see: [Recipes](https://github.com/nvim-lua/k
   - [fzf](https://junegunn.github.io/fzf/)
   - [glow](https://github.com/charmbracelet/glow)
   - A [Nerd Font](https://www.nerdfonts.com/) for for icons support
+  - lua and luarocks
+  - [go DiskUsage()](https://github.com/dundee/gdu)
   - python3 pip 
   - [python3 pynvim](https://github.com/neovim/pynvim)
   - nodejs via [fnm](https://github.com/Schniz/fnm)
   - [pnpm](https://pnpm.io/) to install neovim and tree-sitter-cli globally
-  - lua and luarocks
   - Any other language
 
 ## Create a nvim config switcher
 
-The smart way to try and manage nvim flavours using just a function.
+The smart way to try out and manage nvim flavours using just a function.
 
-- Create the following directories inside `~/.config/`:
+* Create the following directories inside `~/.config/`:
 
   ```bash
   mkdir -p ~/.config/{nvim-LazyVim,nvim-kickstart,nvim-NvChad,nvim-AstroNvim}
   ```
 
-- Place this into your alias file and use the aliases 
+* Populate the above directories with the corresponding repo using git:
+
+  - [LazyVim](https://www.lazyvim.org/)
+
+    `git clone https://github.com/LazyVim/starter ~/.config/nvim-LazyVim/`
+
+  - [kickstart Nvim](https://github.com/nvim-lua/kickstart.nvim)
+
+    `git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim-kickstart/` 
+
+  - [NvChad](https://nvchad.com/)
+
+    `git clone https://github.com/NvChad/starter ~/.config/nvim-NvChad/`
+
+  - [Astro Nvim](https://astronvim.com/)
+
+    `git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim-AstroNvim/`
+
+* Place this into your alias file and use the aliases 
   or the bind key to switch to the config of your choice:
 
 ```bash
