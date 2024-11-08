@@ -41,7 +41,7 @@ For platform specific installations see: [Recipes](https://github.com/nvim-lua/k
 
 ## Create a nvim config switcher
 
-The smart way to try out and manage nvim flavours using just a function.
+The smart way to try out and manage different nvim flavours using just a function.
 
 * Create the following directories inside `~/.config/`:
 
@@ -72,7 +72,7 @@ The smart way to try out and manage nvim flavours using just a function.
 
 ```bash
 ## ----------------------------------------------
-## Neovim config switcher
+## Neovim configuration switcher
 ## ----------------------------------------------
 ## Dependency: fzf
 alias vl="NVIM_APPNAME=nvim-LazyVim nvim"
@@ -92,7 +92,7 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 ## Bind key for zsh and bash
-## Bindkey: 'Ctrl-h'
+## key: 'Ctrl-h'
 if test -n "$BASH_VERSION"; then
   bind -x '"\C-h": nvims'
 elif test -n "$ZSH_VERSION"; then
